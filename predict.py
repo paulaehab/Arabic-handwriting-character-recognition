@@ -8,7 +8,7 @@ from tensorflow import keras
 import csv
 from PIL import Image
 from scipy.ndimage import rotate
-new_model = tf.keras.models.load_model('model.h5')
+new_model = tf.keras.models.load_model('my_model.h5')
 
 def convert_image_to_pixels(url):
     an_image = Image.open(str(url))

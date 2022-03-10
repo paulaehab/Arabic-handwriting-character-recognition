@@ -47,14 +47,13 @@ The database is partitioned into two sets: a training set **(13,440 characters t
  normalized.  
 2-Encoding Categorical Labels : 
 from the labels csv files we can see that labels are categorical values and it is a multi-class classification problem.   
-Our outputs are in the form of:  
-Letters from ’alef’ to ’yeh’ have categories numbers from 10 to 37  
+Our outputs are in the form of: Letters from ’alef’ to ’yeh’ have categories numbers from 10 to 37    
 Here we will encode these categories values using One Hot Encoding with keras.  
 One-hot encoding transforms integer to a binary matrix where the array contains only one ‘1’ and the rest elements are ‘0’  
 3-When using TensorFlow as backend, Keras CNNs require a 4D array (which we'll also refer to as a 4D tensor) as input, with shape  
 **(nb_samples,rows,columns,channels)**  
-where nb_samples corresponds to the total number of images (or samples), and rows, columns, and channels correspond to the number of rows, columns, and  
-channels for each image, respectively.  
+where nb_samples corresponds to the total number of images (or samples), and rows, columns,   
+and channels correspond to the number of rows, columns, and  channels for each image, respectively.  
 So we will reshape the input images to a 4D tensor with following shape (nb_samples, 64, 64 ,1) as we use grayscale images of 64x64 pixels.  
  ## Design Model Architecture  
  In this section I will discuss our CNN Model:  

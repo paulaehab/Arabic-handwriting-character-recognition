@@ -28,7 +28,7 @@ python train.py
 ### Run the prediction script
 
 ```
-python predict.py --text use_your_text
+python predict.py --image use_your_image_local_url
 ```  
 ### Run the model on colab
 ```https://colab.research.google.com/drive/1J_HsZPfzJZTf30RYS4OtwfduI6D_-Pam?usp=sharing```  

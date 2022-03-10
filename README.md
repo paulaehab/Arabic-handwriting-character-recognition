@@ -72,7 +72,7 @@ So we will reshape the input images to a 4D tensor with following shape (nb_samp
 4- Optimizer: we will use is Adam.  
 5- Activation Layer: we will use is relu activation function.  
 6-Kernel initializer: we will use is uniform kernel initializer  
- 
+ ![Screenshot](model.png)
   ## Conclusion 
  In this project I built a CNN model which can classify the arabic handwritten images letters.  tested the model on 3600 image with all possible classes and got very high accuracy of 97.14% .  
    ## Deployment

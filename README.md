@@ -64,7 +64,8 @@ So we will reshape the input images to a 4D tensor with following shape (nb_samp
  5-Another hidden layer with 32 feature maps with the size of 3×3 and a relu activation function to capture more features from the image.  
  6-Other hidden layers with 64 and 128 feature maps with the size of 3×3and a relu activation function to capture complex patterns from the image which will describe the letters later.  
  7-More MaxPooling, Batch Normalization, Regularization and GlobalAveragePooling2D layers.  
- 8-The last layer is the output layer with 38 neurons (number of outputclasses) and it uses softmax activation function as we have multi-classes. Each neuron will give the probability of that class. 
+ 8-The last layer is the output layer with 38 neurons (number of outputclasses) and it uses softmax activation function as we have multi-classes. Each neuron will give the probability of that class.  
+ 
   ![Screenshot](model.png)
 
  ### Notice the hyperparameters used for the model:

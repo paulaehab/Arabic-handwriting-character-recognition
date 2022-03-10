@@ -64,7 +64,9 @@ So we will reshape the input images to a 4D tensor with following shape (nb_samp
  5-Another hidden layer with 32 feature maps with the size of 3×3 and a relu activation function to capture more features from the image.  
  6-Other hidden layers with 64 and 128 feature maps with the size of 3×3and a relu activation function to capture complex patterns from the image which will describe the letters later.  
  7-More MaxPooling, Batch Normalization, Regularization and GlobalAveragePooling2D layers.  
- 8-The last layer is the output layer with 38 neurons (number of outputclasses) and it uses softmax activation function as we have multi-classes. Each neuron will give the probability of that class.  
+ 8-The last layer is the output layer with 38 neurons (number of outputclasses) and it uses softmax activation function as we have multi-classes. Each neuron will give the probability of that class. 
+  ![Screenshot](model.png)
+
  ### Notice the hyperparameters used for the model:
 1- Dropout rate: 20% of the layer nodes.  
 2- Epochs: 20 then we will fit the model on 20 more epochs.  
@@ -72,7 +74,6 @@ So we will reshape the input images to a 4D tensor with following shape (nb_samp
 4- Optimizer: we will use is Adam.  
 5- Activation Layer: we will use is relu activation function.  
 6-Kernel initializer: we will use is uniform kernel initializer  
- ![Screenshot](model.png)
   ## Conclusion 
  In this project I built a CNN model which can classify the arabic handwritten images letters.  tested the model on 3600 image with all possible classes and got very high accuracy of 97.14% .  
    ## Deployment
